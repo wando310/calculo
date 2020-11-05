@@ -1,0 +1,2994 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./image/fundo1.png);
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif; 
+    box-sizing: border-box;     
+      
+}
+li{
+    transition: all .3s;
+}
+button{
+    transition: all .3s;
+}
+.mensagem{
+    width: 180px;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: #030c1d;
+    border-radius: 45px;
+    padding: 5px 20px; 
+    display: none;
+    border: solid 3px #0a5bd4;
+}
+.mensagem::after{
+    content: url("./image/arrow.png");
+    position: absolute;
+    margin-left: 310px;
+}
+.default-buttom{
+    background-color: rgb(221, 158, 98);
+    border: none;
+    padding: 7px 30px;
+    border-radius: 20px;
+    color: #ffff;
+    font-weight: 700;   
+    margin-top: 10px;
+    margin-left: 80px;    
+    box-shadow: 2px 2px 2px #000000;
+    outline: none;
+}
+.default-input{
+    height: 16px;
+    position: absolute;    
+    background-color:  #cb6be9;
+    color: #236420;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0px;
+}
+.geral{
+    width: 1140px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+
+
+
+.lado-direito{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;  
+    margin-left: 16px; 
+}
+
+.lado-direito .bbarra{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px; 
+}
+.lado-direito .bbarra hr{
+    width: 270px;
+    height: 5px;
+    background: rgb(210, 126, 30);
+    border: none;    
+}
+
+.lado-direito .informatiom-content{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+.lado-direito .informatiom-content div:first-child{
+    width: 500px;
+    height: 300px;
+    margin-right: 30px;
+    flex-direction: column;    
+}
+.lado-direito .informatiom-content .style{
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(9, 245, 233, 0.281);
+}
+.lado-direito .informatiom-content .stylee{
+    width: 230px;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 20px;
+    background: rgba(9, 245, 233, 0.281);
+}
+.lado-direito .informatiom-content .image img{
+    width: 500px;
+    height: 400px;
+}
+.lado-direito .informatiom-content img{
+    width: inherit;
+    height: inherit;
+}
+
+
+
+
+.lado-direito .informatiom-content .info{
+    width: 160px;
+    height: 80px;
+    background: rgb(32, 159, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.lado-direito .informatiom-content .info img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -40px;
+}
+.lado-direito .informatiom-content .info h2{
+    font-size: 20px;
+    color: rgb(185, 219, 35);
+    text-shadow: 5px 5px 5px rgb(180, 15, 158);
+}
+.lado-direito .informatiom-content a{
+    text-decoration: none;
+}
+
+.volume ul{    
+    position: absolute;
+    margin-left: 200px;
+    display: flex;
+}
+.volume ul li{
+    margin: 0px;
+    font-size: 15px;
+    padding: 26px 10px;
+}
+
+.volume:hover>ul{
+   display: flex;   
+}
+
+.lado-esquerdo{
+    width: 300px;
+    height: inherit;      
+}
+.lado-esquerdo ul li ul li{
+    border-radius: 50%;
+}
+.lado-esquerdo label a{
+    text-decoration: none;    
+    display: flex;
+}
+.lado-esquerdo ul{
+    width: auto;
+    padding:0px;
+    text-align: center;
+    font-size: 25px; 
+}
+.lado-esquerdo .volume ul{
+    width: auto;
+    padding:0px;
+    text-align: center;
+    font-size: 25px; 
+    margin-left: 237px;   
+    margin-top: -48px;
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+.lado-esquerdo img{
+    width: 20px;
+    margin-left: 20px;
+}
+
+.volume:hover>ul{
+    display: flex;   
+ }
+ 
+.lado-esquerdo li{
+    width: 100%;
+    list-style: none;
+    background-color: rgb(70, 38, 165);
+    color: rgb(239, 240, 247);
+    margin: 20px 0px;
+    padding: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; 
+}
+
+
+.lado-esquerdo label{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lado-esquerdo label p{
+    font-size: 80px;
+    margin: 0px;
+    color: #474545;
+    text-shadow: 3px 3px 3px #f5f5f5;
+    font-weight: 600;
+}
+ .lado-esquerdo .Perimetro ul{
+    margin-left: 237px;
+    margin-top: -48px;
+    position: absolute;
+    z-index: 5;
+    display: none; 
+ }
+ .Perimetro ul li{
+    margin: 0px;
+    font-size: 15px;
+    padding: 26px 10px;
+}
+
+.Perimetro:hover>ul{
+    display: flex; 
+}
+
+.lado-esquerdo .area ul{
+    position: absolute;
+    margin-left: 237px;
+    margin-top: -48px;
+    position: absolute;
+    z-index: 5;
+    display: none;
+ }
+ .area ul li{
+    margin: 0px;
+    font-size: 15px;
+    padding: 26px 10px;
+}
+
+.area:hover>ul{
+    display: flex;     
+}
+
+/* Esfera */
+
+.conteiner-vol-esfera{
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #cb6be9;
+    border-radius: 20px;
+    z-index: 2;
+    display: none;
+    box-shadow: 0px 0px 40px #d46318;
+}
+.conteiner-vol-esfera .form{
+    margin: auto; 
+    margin-left: 0px;  
+}
+.conteiner-vol-esfera .form img{
+    width: 210px;
+    margin-left: -15px;
+}
+.conteiner-vol-esfera .form button{
+    position: absolute;
+    margin: 90px 0px 0px -150px;
+}
+
+.conteiner-vol-esfera .form button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-vol-esfera .image{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.conteiner-vol-esfera input{
+    width: 45px;
+    height: 22px;
+    font-size: 25px;
+    margin: 9px 0px 0px -55px;
+}
+
+/*Trapezio*/
+
+.conteiner-vol-trapezio{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color:  #cb6be9;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -200px;   
+    margin-left: 75px;
+    display: none;
+}
+.conteiner-vol-trapezio .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-vol-trapezio .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: 5px;
+}
+.conteiner-vol-trapezio .area-calculo button{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.conteiner-vol-trapezio .area-calculo .formula img{
+    width: 300px;
+    margin-left: -100px;
+}
+.conteiner-vol-trapezio .area-calculo{
+    padding-top: 20px;
+    padding-left: 30px;    
+}
+
+.conteiner-vol-trapezio .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-vol-trapezio .area-calculo .b--1{
+    width: 50px;
+    height: 26px;
+    font-size: 30px;
+    margin: 0px 10px 10px -215px;
+}
+.conteiner-vol-trapezio .area-calculo .b--2{
+    width: 50px;
+    height: 26px;
+    font-size: 30px;  
+    margin: 0px 10px 10px -145px;    
+}
+.conteiner-vol-trapezio .area-calculo .h-alt{
+    width: 50px;
+    height: 26px;
+    font-size: 30px;
+    margin: 24px 10px 10px -70px;   
+}
+.conteiner-vol-trapezio .area-calculo .H-Alt{
+    width: 50px;
+    height: 26px;
+    font-size: 30px;
+    margin: 24px 10px 10px 6px;   
+}
+.conteiner-vol-trapezio .area-calculo .formula{
+    margin-left: 0px;
+}
+
+/*Retangulo*/
+
+.conteiner-vol-retangulo{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color:  #cb6be9;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -200px;   
+    margin-left: 75px;
+    display: none;
+    box-shadow: 0px 0px 40px #d46318;
+}
+.conteiner-vol-retangulo .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-vol-retangulo .formula img{
+    width: 210px;
+    margin-left: -20px;
+}
+.conteiner-vol-retangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: 0px;
+}
+.conteiner-vol-retangulo .area-calculo button{    
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.conteiner-vol-retangulo .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-vol-retangulo .area-calculo .a{
+    width: 50px;
+    height: 27px;
+    font-size: 26px;
+    margin: -3px 10px 10px -145px;
+}
+.conteiner-vol-retangulo .area-calculo .b{
+    width: 50px;
+    height: 27px;
+    font-size: 26px; 
+    margin: -3px 10px 10px -69px;    
+}
+.conteiner-vol-retangulo .area-calculo .c{
+    width: 50px;
+    height: 27px;
+    font-size: 26px; 
+    margin: -3px 10px 10px 6px;   
+}
+/*Quadrado*/
+
+.conteiner-vol-quadrado{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color:  #cb6be9;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -200px; 
+    margin-left: 75px;
+    display: none;
+    box-shadow: 0px 0px 40px #d46318;
+}
+.conteiner-vol-quadrado .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-vol-quadrado .formula img{
+    width: 160px;
+}
+.conteiner-vol-quadrado .formula{
+    margin-left: 30px;
+}
+.conteiner-vol-quadrado .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-vol-quadrado .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-vol-quadrado .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-vol-quadrado .area-calculo button{
+    margin-left: 60px; 
+    margin-top: 40px;  
+}
+.conteiner-vol-quadrado .area-calculo .a{
+    width: 65px;
+    height: 28px;
+    margin: 10px 10px 10px -77px;
+}
+
+/*Triangulo*/
+
+.conteiner-vol-triangulo{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color:  #cb6be9;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;    
+    box-shadow: 0px 0px 40px #d46318;
+}
+.conteiner-vol-triangulo .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-vol-triangulo .formula img{
+    width: 200px;
+    margin-left: 40px;
+}
+.conteiner-vol-triangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -40px;
+}
+.conteiner-vol-triangulo .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+.conteiner-vol-triangulo .area-calculo .formula{   
+   margin-left: -70px;  
+}
+
+.conteiner-vol-triangulo .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;    
+}
+
+.conteiner-vol-triangulo .area-calculo button{
+    margin-left: 50px;   
+    margin-top: 20px;
+}
+
+.conteiner-vol-triangulo .area-calculo .a{
+    width: 43px;
+    height: 35px;
+    font-size: 26px;
+    margin: 0px 10px 10px -30px;    
+}
+.conteiner-vol-triangulo .area-calculo .R{
+    width: 43px;
+    height: 35px;
+    font-size: 26px;
+    text-align: center;
+    margin: 2px 10px 0px -87px;
+}
+
+/*Perimetro-Triangulo*/
+
+.conteiner-peri-triangulo{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #a39a6f;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #1879d4;
+}
+.conteiner-peri-triangulo .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-peri-triangulo .formula img{
+    width: 200px;
+    margin-left: 10px;
+}
+.conteiner-peri-triangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-peri-triangulo .area-calculo{
+    padding-top: 50px;
+    padding-left: 70px;    
+}
+
+.conteiner-peri-triangulo .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-peri-triangulo .area-calculo button{
+    margin-left: 90px;   
+    margin-top: 40px;
+}
+.conteiner-peri-triangulo .peri1{
+    width: 54px;
+    height: 27px;
+    font-size: 27px;
+    margin: 0px 10px 10px -148px;
+    background-color:transparent;
+}
+.conteiner-peri-triangulo .peri2{
+    width: 54px;
+    height: 27px;
+    font-size: 27px;
+    margin: 0px 10px 10px -73px;
+    background-color:transparent;
+}
+.conteiner-peri-triangulo .peri3{
+    width: 54px;
+    height: 27px;
+    font-size: 27px;
+    margin: 0px 10px 10px 0px;
+    background-color:transparent;
+}
+
+/*Perimetro-Quadrado*/
+
+.conteiner-peri-quadrado{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #a39a6f;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #1879d4;
+}
+.conteiner-peri-quadrado .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-peri-quadrado .formula img{
+    width: 150px;
+    margin-left: 70px;
+}
+.conteiner-peri-quadrado .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-peri-quadrado .image img{
+    width: 170px;    
+}
+.conteiner-peri-quadrado .image img:last-child{
+    width: 70px;    
+}
+.conteiner-peri-quadrado .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-peri-quadrado .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-peri-quadrado .area-calculo button{
+    margin-left: 80px; 
+    margin-top: 40px;  
+}
+.conteiner-peri-quadrado .quad1{
+    width: 55px;
+    height: 35px;
+    font-size: 30px;
+    margin: 14px 10px 10px -48px;
+    background-color: transparent;    
+}
+
+/*Perimetro-Retangulo*/
+
+.conteiner-peri-retangulo{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #a39a6f;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #1879d4;
+}
+.conteiner-peri-retangulo .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-peri-retangulo .image img:nth-child(2){
+    position: absolute;
+    margin-top: 140px;
+    margin-left: -50px;    
+}
+.conteiner-peri-retangulo .formula img{
+    width: 190px;
+    margin-left: 30px;
+}
+.conteiner-peri-retangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-peri-retangulo .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-peri-retangulo .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-peri-retangulo .area-calculo button{
+    margin-left: 100px;   
+    margin-top: 40px;
+}
+.conteiner-peri-retangulo .ret1{
+    width: 55px;
+    height: 35px;
+    font-size: 30px;
+    margin: -6px 10px 10px -110px;
+    background-color: transparent; 
+}
+.conteiner-peri-retangulo .ret2{
+    width: 55px;
+    height: 35px;
+    font-size: 30px;
+    margin: -6px 10px 10px 5px;
+    background-color: transparent; 
+}
+
+/*Perimetro-Esfera*/
+
+.conteiner-peri-esfera{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #a39a6f;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #1879d4;
+}
+.conteiner-peri-esfera .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-peri-esfera .formula img{
+    width: 150px;
+    margin-left: 50px;
+}
+.conteiner-peri-esfera .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-peri-esfera .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-peri-esfera .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-peri-esfera .area-calculo button{
+    margin-left: 80px;   
+    margin-top: 40px;
+}
+.conteiner-peri-esfera .esf1{
+    width: 55px;
+    height: 35px;
+    font-size: 30px;
+    margin: 0px 10px 10px 5px;
+    background-color: transparent; 
+}
+
+/*Perimetro-Trapezio*/
+
+.conteiner-peri-trapezio{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #a39a6f;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #1879d4;
+}
+.conteiner-peri-trapezio .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-peri-trapezio .formula img{
+    width: 200px;
+    margin-left: 5px;
+}
+.conteiner-peri-trapezio .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-peri-trapezio .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-peri-trapezio .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-peri-trapezio .area-calculo button{
+    margin-left: 70px;   
+    margin-top: 40px;
+}
+.conteiner-peri-trapezio .trap1{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -8px 10px 10px -170px;
+    background-color: transparent; 
+}
+.conteiner-peri-trapezio .trap2{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -8px 10px 10px -115px;
+    background-color: transparent; 
+}
+.conteiner-peri-trapezio .trap3{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -8px 10px 10px -61px;
+    background-color: transparent; 
+}
+.conteiner-peri-trapezio .trap4{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -8px 10px 10px -6px;
+    background-color: transparent; 
+}
+
+/*Area-triangulo*/
+
+.conteiner-area-triangulo{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c775e;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #570ae7;
+}
+.conteiner-area-triangulo .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-area-triangulo .formula img{
+    width: 200px;
+    margin-left: 5px;
+}
+.conteiner-area-triangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-area-triangulo .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-area-triangulo .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-area-triangulo .area-calculo button{
+    margin-left: 60px;   
+    margin-top: 40px;
+}
+.conteiner-area-triangulo .area1{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -15px 10px 10px -60px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+.conteiner-area-triangulo .area2{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -15px 10px 10px -128px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+
+/*Area-quadrado*/
+
+.conteiner-area-quadrado{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c775e;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #570ae7;
+}
+.conteiner-area-quadrado .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-area-quadrado .image img{
+    width: 300px;
+}
+.conteiner-area-quadrado .formula img{
+    width: 170px;
+    margin-left: 5px;
+}
+.conteiner-area-quadrado .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-area-quadrado .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-area-quadrado .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-area-quadrado .area-calculo button{
+    margin-left: 60px;  
+    margin-top: 40px; 
+}
+.conteiner-area-quadrado .area_quad1{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: 10px 10px 10px -80px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+
+/*Area-Retangulo*/
+
+.conteiner-area-retangulo{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c775e;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #570ae7;
+}
+.conteiner-area-retangulo .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-area-retangulo .image img{
+    width: 300px;
+}
+.conteiner-area-retangulo .formula img{
+    width: 170px;
+    margin-left: 5px;
+}
+.conteiner-area-retangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-area-retangulo .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-area-retangulo .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-area-retangulo .area-calculo button{
+    margin-left: 60px;  
+    margin-top: 40px; 
+}
+.conteiner-area-retangulo .area_ret_1{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -5px 10px 10px -70px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+.conteiner-area-retangulo .area_ret_2{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -5px 10px 10px 10px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+
+/*Area-Esfera*/
+
+.conteiner-area-esfera{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c775e;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+    display: none;
+    box-shadow: 0px 0px 40px #570ae7;
+}
+.conteiner-area-esfera .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-area-esfera h2{
+    margin-left: 60px;
+}
+.conteiner-area-esfera .image img{
+    width: 130px;
+}
+.conteiner-area-esfera .image img:last-child{
+    width: 80px;
+}
+.conteiner-area-esfera .formula img{
+    width: 260px;
+    margin-left: 5px;
+}
+.conteiner-area-esfera .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-area-esfera .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-area-esfera .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-area-esfera .area-calculo button{
+    margin-left: 80px;   
+    margin-top: 40px;
+}
+.conteiner-area-esfera .area_esf_1{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: 20px 10px 10px -70px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+
+/*Area-trapezio*/
+
+.conteiner-area-trapezio{
+    width: 700px;
+    height: 300px;   
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c775e;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -250px;   
+    margin-left: 85px;
+   display: none;
+   box-shadow: 0px 0px 40px #570ae7;
+}
+.conteiner-area-trapezio .image{
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-area-trapezio .image img{
+    width: 300px;
+}
+.conteiner-area-trapezio .formula img{
+    width: 260px;
+    margin-left: 5px;
+}
+.conteiner-area-trapezio h2{
+    margin-left: 40px;
+}
+.conteiner-area-trapezio .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -60px;
+}
+.conteiner-area-trapezio .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+.conteiner-area-trapezio .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-area-trapezio .area-calculo button{
+    margin-left: 80px;   
+    margin-top: 40px;
+}
+.conteiner-area-trapezio .area_trap_B{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -8px 10px 10px -185px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+.conteiner-area-trapezio .area_trap_b{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -8px 10px 10px -120px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+.conteiner-area-trapezio .area_trap_h{
+    width: 55px;
+    height: 35px;
+    font-size: 24px;
+    margin: -8px 10px 10px -50px;
+    background-color: transparent; 
+    color: cornsilk;
+}
+
+.sub-menu{
+    display: none;
+}
+
+
+
+/*conversão*/
+.conversao{
+    width: 820px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;   
+    display: none;
+    margin-top: -400px;
+}
+.conversao button{
+    position: absolute;    
+    border-radius: 20px;
+    outline: none;
+    padding: 12px 30px;
+    border: none;
+    background-color: rgb(204, 128, 28);
+    color: white;
+    font-weight: 700;
+    transition: all .7s;
+}
+.conversao button:hover{
+    cursor: pointer;
+    background-color: rgb(15, 42, 196);
+    color: rgb(141, 135, 135);
+}
+.conversao .btn-mostra-resultado{
+    margin-top: 430px;
+    margin-right: 0px;
+}
+.conversao img{
+    width: 600px;    
+    border-radius: 30px;
+    border: solid 10px #098383;
+    box-shadow: 0px 0px 40px #000000;  
+    margin-right: 0px;  
+}
+.conversao input{
+    position: absolute;
+    cursor: pointer;
+}
+.conversao input::placeholder{
+    color: rgb(11, 46, 245);
+    font-weight: 700;
+}
+.conversao h2{
+    color: rgb(15, 146, 233);
+    position: absolute;
+    margin-bottom: 430px;
+}
+
+.lado-direito .conversao p{
+    position: absolute;
+    margin-top: -220px;
+    color: khaki;
+    font-size: 13px;
+    text-align: center;
+    display: none;
+}
+#kelvin-cel{
+    margin-left: -548px;
+    margin-top: -290px;
+}
+#kelvin-fahre{
+    margin-left: 550px;
+    margin-top: -293px;
+}
+#fahre-cel{
+    margin-left: -550px;
+    margin-top: -97px;
+}
+#fahre-kelvin{
+    margin-left: 550px;
+    margin-top: -97px;
+}
+#cel-kelvin{
+    margin-left: -550px;
+    margin-top: 136px;
+}
+#cel-fahre{
+    margin-left: 550px;
+    margin-top: 136px;
+}
+#k1, #k2, #f1, #f2, #c1, #c2{
+    width: 24px;
+    height: 27px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(11, 46, 245);  
+    font-weight: 700;
+}
+#k1{
+    margin-left: -359px;
+    margin-top: -248px;    
+}
+#k2{
+    margin-left: 189px;
+    margin-top: -247px;
+}
+#f1{
+    margin-left: -290px;
+    margin-top: -50px;
+}
+#f2{
+    margin-left: 193px;
+    margin-top: -50px;
+}
+#c1{
+    margin-left: -355px;
+    margin-top: 184px;
+}#c2{
+    margin-left: 290px;
+    margin-top: 190px;
+}
+.all-result{
+    width: 280px;
+    height: 85px;   
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    background-color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================================================================
+========================================================================================
+============================================================================*/
+
+@media only screen and (max-width: 360px) {
+    body{
+        width: auto;
+    }
+    .geral{
+        width: auto;
+        display: flex;
+        flex-direction: column;        
+    }   
+
+    .generetion .menu label{
+        margin: 10px;        
+    }
+    .geral-menu .logo{
+        margin-left: 130px;
+    }
+
+    .head-menu {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-menu ul a{
+        margin: auto;
+        margin-top: 14px;
+    }
+    .head-menu ul a li{
+        margin: auto;
+        padding: 5px 20px;
+        font-size: 13px;
+    }
+
+    .lado-esquerdo{
+        width: 100%;
+        height: auto;
+    }
+    .lado-esquerdo li{
+        margin-top: 0px;
+    }
+    .lado-esquerdo label{
+        padding-top: 10px;        
+    }
+    .lado-esquerdo ul{
+        width: 100%;
+        display: flex;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .lado-esquerdo ul li{
+        width: 100%;
+        margin-bottom: 5px;
+        border-right: solid 1px rgb(51, 50, 50);
+        padding: 10px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }    
+    .lado-esquerdo ul li img{
+        width: 14px;
+        transform: rotate(90deg);
+    }
+    .lado-esquerdo ul li ul li{
+        margin-bottom: 0px; 
+    }
+    .lado-esquerdo .volume ul{
+        margin-left: 0px;
+        margin-top: 27px;
+        border: none;
+        width: 80px;     
+    }
+    .lado-esquerdo .Perimetro ul{
+        margin-left: 0px;
+        margin-top: 27px;
+        border: none;
+        width: 85px;     
+    }
+    .lado-esquerdo .area ul{
+        margin-left: 0px;
+        margin-top: 27px;
+        border: none;
+        width: 80px;     
+    }    
+    .lado-esquerdo ul li ul li:hover{      
+        font-size: 13px;
+        background-color: #1acedb;  
+        color: #ffd900;
+        flex-direction: column;
+    }
+    
+    .lado-esquerdo ul li ul:hover{      
+        font-size: 13px;  
+        flex-direction: column;
+    }
+   
+    .volume:hover>ul{
+        display: block; 
+    }
+    .Perimetro:hover>ul{
+        display: block;   
+    }
+    .area:hover>ul{
+        display: block;   
+    }
+
+    .geral .lado-esquerdo .volume ul{        
+        margin-top: 9px;        
+    }
+    .geral .lado-esquerdo .volume ul li{  
+        width: 97px;        
+        margin-top: 3px;
+        margin-left: -8px;
+        border-radius: 0px;
+    }
+    .geral .lado-esquerdo .Perimetro ul{          
+        margin-top: 9px;
+    }
+    .geral .lado-esquerdo .Perimetro ul li{  
+        width: 97px;        
+        margin-top: 3px;
+        margin-left: -8px;
+        border-radius: 0px;
+    }
+    .geral .lado-esquerdo .area ul{          
+        margin-top: 9px;
+    }
+    .geral .lado-esquerdo .area ul li{  
+        width: 97px;        
+        margin-top: 3px;
+        margin-left: -8px;
+        border-radius: 0px;
+    }
+
+    footer {
+        height: 50px;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 1470px;
+        background-color: rgb(14, 39, 43);
+        color: lemonchiffon;
+        padding-top: 20px;
+    }
+
+    .shadow{
+        height: 500px;
+        margin-top: 400px;
+        padding-right: 12px;
+    }
+   .shadow .informatiom-content{
+       flex-direction: column;
+   }
+   
+   .shadow .informatiom-content img{
+       width: 360px;
+       height: 200px;
+       margin-top: -277px;
+   }   
+   .shadow .informatiom-content div{
+       display: flex;
+       justify-content: center;
+       width: 360px;
+       height: 300px;
+       margin-left: -17px;
+       margin-top: 0px;
+   }
+   .shadow .informatiom-content div p{
+       width: 340px;
+       margin-left: 15px;
+   }
+   .shadow .informatiom-content .style{
+       width: 340px;
+       padding: 40px 5px;
+       margin-top: -100px;
+       margin-left: -12px;
+   }
+   .shadow .informatiom-content .style p{
+       width: 270px;
+       margin: 0px;
+   }
+   .shadow .informatiom-content .style img{
+       margin: -30px 0px;
+   }
+   .shadow .bbarra{
+        margin-top: 20px;
+    }
+    .shadow .bbarra hr{
+       display: none;
+    }
+    .shadow .bbarra h2{
+        margin-left: -20px;
+    }
+    .shadow .paragrafo{
+        width: 320px;
+    }
+
+
+ .sub-menu{
+    display: block;
+    margin: -180px -280px 0px 0px;
+    position: absolute;
+    z-index: 5;
+}
+ .generetion .menu{     
+    height: 184px;    
+    margin-left: 162px;
+    margin-top: 67px;
+    background-color: #252524e8;        
+    flex-direction: column;
+    transition: all ease 1s;  
+}
+.generetion .geral-menu{
+    width: 360px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.generetion .geral-menu .logo img{
+    width: 150px;
+    margin-left: 10px;
+}
+.generetion .geral-menu .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -260px;
+    margin-top: 170px;
+}
+.generetion h2{
+    width: 100%;
+    background: #04c8e2;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    opacity: .7;
+}
+
+.lado-direito .informatiom-content div:first-child {
+    width: 360px;
+    height: 300px;
+    margin-right: 30px;
+    flex-direction: column;
+}
+
+    /*Triangulo*/
+.conteiner-vol-triangulo{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-vol-triangulo .image{
+  width: auto;
+  height: auto;
+  margin: auto; 
+  margin-top: -50px; 
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 3px;
+}
+.conteiner-vol-triangulo .image img{
+    width: 70px;    
+  }
+.conteiner-vol-triangulo .formula img{
+    width: 200px;
+    margin-left: 40px;
+}
+.conteiner-vol-triangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+.conteiner-vol-triangulo .area-calculo h2{
+    margin: 0px;
+}
+.conteiner-vol-triangulo .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+.conteiner-vol-triangulo .area-calculo button{
+    margin-left: 17px;   
+    margin-top: 50px;
+}
+.conteiner-vol-triangulo .area-calculo .R{
+    width: 43px;
+    height: 35px;
+    font-size: 26px;
+    text-align: center;
+    margin: 0px 10px 0px -87px;
+}
+
+/*Quadrado*/
+
+.conteiner-vol-quadrado{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-vol-quadrado .image{
+  width: auto;
+  height: auto;
+  margin: auto; 
+  margin-top: -50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.conteiner-vol-quadrado .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: -2170px;
+  margin-left: 0px;
+}
+.conteiner-vol-quadrado h2{
+    margin: 0px;
+}
+
+/*Retangulo*/
+
+.conteiner-vol-retangulo{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-vol-retangulo .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.conteiner-vol-retangulo .formula img{
+    width: 210px;
+    margin-left: -20px;
+}
+.conteiner-vol-retangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: -2170px;
+  margin-left: 70px;
+}
+.conteiner-vol-retangulo h2{
+    margin-top: 0px;
+}
+
+/* Esfera */
+
+.conteiner-vol-esfera{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-vol-esfera .form{
+    margin: auto; 
+    margin-top: 0px;
+    margin-left: 90px;  
+}
+.conteiner-vol-esfera .form button{
+    position: absolute;
+    margin: 100px 0px 0px -170px;
+}
+.conteiner-vol-esfera .image{
+  width: auto;
+  height: auto;
+  margin: auto; 
+  margin-bottom: 20px;
+  margin-top: -50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+/*Perimetro-Triangulo*/
+.conteiner-peri-triangulo{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-peri-triangulo .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.conteiner-peri-triangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: -60px;
+  margin-left: -30px;
+}
+.conteiner-peri-triangulo .area-calculo{
+    padding-top: 50px;
+    padding-left: 70px;    
+}
+
+.conteiner-peri-triangulo .area-calculo button:active{
+    box-shadow: 0px 0px 0px #000000;
+    font-size: 12px;
+}
+
+.conteiner-peri-triangulo .area-calculo button{
+    margin-left: 80px;   
+    margin-top: 40px;
+}
+/*Perimetro-Quadrado*/
+
+.conteiner-peri-quadrado{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-peri-quadrado .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.conteiner-peri-quadrado .image img{
+    width: 120px;    
+}
+.conteiner-peri-quadrado .area-calculo{
+    padding-top: 0px;
+    padding-left: 100px;   
+    margin-top: 0px; 
+}
+
+/*Perimetro-Retangulo*/
+
+.conteiner-peri-retangulo{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-peri-retangulo .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.conteiner-peri-retangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.conteiner-peri-retangulo .area-calculo button{
+    margin-left: 80px;   
+    margin-top: 50px;
+}
+
+/*Perimetro-Esfera*/
+
+.conteiner-peri-esfera{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-peri-esfera .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.conteiner-peri-esfera .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+.conteiner-peri-esfera .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+.conteiner-peri-esfera .area-calculo button{
+    margin-left: 60px;   
+    margin-top: 50px;
+}
+
+/*Perimetro-Trapezio*/
+
+.conteiner-peri-trapezio{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-peri-trapezio .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.conteiner-peri-trapezio .image img{
+    width: 150px;
+}
+.conteiner-peri-trapezio .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -20px;
+  margin-top: 0px;
+}
+.conteiner-peri-trapezio .area-calculo button{
+    margin-left: 70px;   
+    margin-top: 70px;
+}
+/*Area-triangulo*/
+
+.conteiner-area-triangulo{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-area-triangulo .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.conteiner-area-triangulo .image img{
+    width: 160px;
+}
+.conteiner-area-triangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.conteiner-area-triangulo .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+.conteiner-area-triangulo .area-calculo button{
+    margin-left: 50px;   
+    margin-top: 40px;
+}
+
+/*Area-quadrado*/
+
+.conteiner-area-quadrado{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-area-quadrado .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.conteiner-area-quadrado .image img{
+    width: 300px;
+}
+.conteiner-area-quadrado .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 0px;
+}
+
+/*Area-Retangulo*/
+
+.conteiner-area-retangulo{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-area-retangulo .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.conteiner-area-retangulo .image img{
+    width: 300px;
+}
+.conteiner-area-retangulo .formula img{
+    width: 170px;
+    margin-left: 0px;
+}
+.conteiner-area-retangulo .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-left: -10px;
+  margin-top: -37px;
+}
+/*Area-Esfera*/
+
+.conteiner-area-esfera{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-area-esfera .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.conteiner-area-esfera h2{
+    margin-left: 60px;
+    margin-top: 0px;
+}
+.conteiner-area-esfera .formula img{
+    width: 260px;
+    margin-left: 20px;
+}
+.conteiner-area-esfera .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: 0px;
+  margin-left: -40px;
+}
+/*Area-trapezio*/
+
+.conteiner-area-trapezio{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#cb6be9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 70px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.conteiner-area-trapezio .image{
+    width: auto;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: -50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.conteiner-area-trapezio .image img{
+    width: 200px;
+}
+.conteiner-area-trapezio .formula img{
+    width: 260px;
+    margin-left: 5px;
+}
+.conteiner-area-trapezio .area-calculo{
+  width: auto;
+  height: auto;  
+  margin: auto;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.conteiner-area-trapezio .area-calculo{
+    padding-top: 20px;
+    padding-left: 70px;    
+}
+
+/*Calculadora*/
+.lado-direito .calc{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#6bd0e9 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    padding-top: 20px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+
+}
+.lado-direito .calc p{
+    width: 330px;
+    margin: auto;
+}
+.lado-direito .calc .visor-calc{
+    width: 200px;
+    height: 30px;
+    padding: 7px;
+    font-size: 16px;
+    margin: 1px;
+    color: rgb(7, 63, 245);
+}
+
+
+.lado-direito #kelvin-cel{
+    margin-left: -300px;
+    margin-top: -160px;
+}
+.lado-direito #kelvin-fahre{
+    margin-left: 300px;
+    margin-top: -160px;
+}
+.lado-direito #fahre-cel{
+    margin-left: -300px;
+    margin-top: -45px;
+}
+.lado-direito #fahre-kelvin{
+    margin-left: 300px;
+    margin-top: -45px;
+}
+.lado-direito #cel-kelvin{
+    margin-left: -300px;
+    margin-top: 87px;
+}
+.lado-direito #cel-fahre{
+    margin-left: 300px;
+    margin-top: 87px;
+}
+.lado-direito #k1, .lado-direito #k2, .lado-direito #f1, .lado-direito #f2, .lado-direito #c1, .lado-direito #c2{
+    width: 15px;
+    height: 17px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(11, 46, 245);  
+    font-weight: 500;
+}
+.lado-direito #k1{
+    margin-left: -200px;
+    margin-top: -145px;    
+}
+.lado-direito #k2{
+    margin-left: 110px;
+    margin-top: -140px;
+}
+.lado-direito #f1{
+    margin-left: -163px;
+    margin-top: -27px;
+}
+.lado-direito #f2{
+    margin-left: 110px;
+    margin-top: -27px;
+}
+.lado-direito #c1{
+    margin-left: -205px;
+    margin-top: 102px;
+}.lado-direito #c2{
+    margin-left: 170px;
+    margin-top: 103px;
+}
+.lado-direito .all-result{
+    width: 200px;
+    height: 55px;   
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    right: 60px;
+    top: 230px;
+    border-radius: 20px;
+    background-color:rgb(197, 146, 146);
+}
+
+/*Cronometro*/
+.lado-direito .stopwatch{
+    width: 360px;
+    height: 2505px;   
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#2b3f05 60%, rgb(14, 39, 43));
+    position: absolute;
+    margin-top: 1395px;   
+    margin-left: -16px;
+    display: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.lado-direito .stopwatch p{
+    width: 320px;
+    color: rgb(192, 185, 185);
+}
+.lado-direito .clock{
+    width: 100%;
+    height: 240px;    
+    box-sizing: border-box;
+    margin-top: -1300px;
+}
+.lado-direito .clock div{    
+    width: 40px;
+    height: 60px;
+    font-size: 30px;
+    background: linear-gradient(rgb(63, 65, 50), #0993f098);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 15px;
+    border: solid 3px #fe6400;
+    color: rgb(32, 255, 11);
+    border-radius: 50%;
+}
+.lado-direito .clock label:nth-child(2){
+    margin-left: 20px;
+}
+.lado-direito .stopwatch label{
+    width: 60px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;        
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    font-weight: 500;
+}
+.lado-direito .clock button{
+    position: absolute; 
+    margin-top: 170px;
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #e29a15;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: all ease .3s;
+}
+.lado-direito .clock .btn-iniciar{      
+    margin-right: 180px;
+}
+.lado-direito .clock .btn-parar{      
+    margin-left: 12px;
+}
+.lado-direito .clock .btn-stop{      
+    margin-left: 200px;
+}
+.lado-direito .stopwatch h2{
+    position: absolute;
+    margin-top: -200px;
+    font-size: 30px;
+    color: #e68e0a;
+    text-shadow: 2px 2px 3px rgb(12, 241, 62);
+}
+
+
+.lado-esquerdo .mensagem{
+    width: 360px;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(219, 223, 27);
+    background-color: #030c1d;
+    padding: 5px 20px; 
+    display: none;
+    border: solid 3px #0a5bd4;    
+    margin: 0px;
+    margin-bottom: 50px;
+}
+.lado-esquerdo .mensagem::after{
+    content: url("");   
+}
+
+
+.shadow p{
+    width: 330px;    
+}
+.shadow .informatiom-content img {
+    width: 360px;
+    height: 200px;
+    margin-top: -423px;
+    margin-left: 1px;
+}
+footer{
+    margin-top: 1900px;
+}
+
+.shadow .informatiom-content .style{
+    height: auto;
+    margin-top: -150px;
+    margin-left: -6px;
+}
+/*conversão*/
+.conversao{
+    width: 360px;
+    height: 2505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;   
+    display: none;
+    margin-top: 1395px;
+    margin-left: -16px;
+    background: linear-gradient(#720f72 60%, rgb(14, 39, 43));
+    padding-bottom: 2160px;
+}
+.conversao button{
+    position: absolute;    
+    border-radius: 20px;
+    outline: none;
+    padding: 12px 30px;
+    border: none;
+    background-color: rgb(204, 128, 28);
+    color: white;
+    font-weight: 700;
+    transition: all .7s;
+}
+.conversao button:hover{
+    cursor: pointer;
+    background-color: rgb(15, 42, 196);
+    color: rgb(141, 135, 135);
+}
+.conversao .btn-mostra-resultado{
+    margin-top: 300px;
+    margin-right: 0px;
+}
+.conversao img{
+    width: 360px;    
+    border-radius: 30px;
+    border: solid 10px #e9800886;
+    box-shadow: 0px 0px 40px #000000;  
+    margin-right: 0px; 
+}
+.conversao input{
+    position: absolute;
+    cursor: pointer;
+}
+.conversao input::placeholder{
+    color: rgb(11, 46, 245);
+    font-weight: 700;
+}
+.conversao h2{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-bottom: 295px;
+}
+
+.lado-direito .conversao p{
+    position: absolute;
+    margin-top: -220px;
+    color: khaki;
+    font-size: 13px;
+    text-align: center;
+    display: none;
+}
+#kelvin-cel{
+    margin-left: -558px;
+    margin-top: -297px;
+}
+#kelvin-fahre{
+    margin-left: 560px;
+    margin-top: -303px;
+}
+#fahre-cel{
+    margin-left: -560px;
+    margin-top: -97px;
+}
+#fahre-kelvin{
+    margin-left: 560px;
+    margin-top: -97px;
+}
+#cel-kelvin{
+    margin-left: -560px;
+    margin-top: 136px;
+}
+#cel-fahre{
+    margin-left: 560px;
+    margin-top: 136px;
+}
+#k1, #k2, #f1, #f2, #c1, #c2{
+    width: 24px;
+    height: 27px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(11, 46, 245);  
+    font-weight: 700;
+}
+#k1{
+    margin-left: -369px;
+    margin-top: -258px;    
+}
+#k2{
+    margin-left: 199px;
+    margin-top: -257px;
+}
+#f1{
+    margin-left: -301px;
+    margin-top: -50px;
+}
+#f2{
+    margin-left: 200px;
+    margin-top: -50px;
+}
+#c1{
+    margin-left: -364px;
+    margin-top: 191px;
+}#c2{
+    margin-left: 304px;
+    margin-top: 193px;
+}
+.all-result{
+    width: 280px;
+    height: 85px;   
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    background-color:#fff;
+}
+
+
+
+
+}
+
+
+
+
+
+
+.menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 162px;
+}
+.calculadora, .cronometro, .temperatura{
+    color: #ffff;
+    margin: 0px 5px;
+}
+.calculadora:hover, .cronometro:hover, .temperatura:hover{
+ color: #a9cc2c;
+ cursor: pointer;
+}
+
+
+.calc{
+    width: 700px;
+    height: auto;    
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: center;    
+    padding: 30px;
+    position: absolute;
+    z-index: 3;
+    display: none;    
+}
+.calc p{
+    text-align: left;
+}
+.calc .buttons-calc{
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.buttons-calc input{
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    font-size: 16px;
+    margin: 1px;
+}
+.calc #visor-calc{
+    margin-bottom: 7px;
+    padding: 6px;
+    font-size: 15px;
+    text-align: right;
+    outline: none;
+}
+.limpador{
+    width: 100px;
+    margin: auto;
+    padding: 3px;
+    color: #fff;
+    background: rgb(55, 154, 161);
+    border-radius: 50%;
+    margin-bottom: 6px;
+    outline: none;
+}
+
+.limpador:active{
+    font-size: 12px;     
+}
+
+
+
+.stopwatch{
+    width: 840px;
+    height: calc(100vh - 50px);
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    margin-top: 0px;
+}
+.stopwatch h3{
+    font-size: 25px;
+}
+.clock{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock div{    
+    width: 80px;
+    height: auto;
+    font-size: 50px;
+    background: linear-gradient(rgb(63, 65, 50), #0993f098);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+    border: solid 5px #fe6400;
+    color: rgb(32, 255, 11);
+    border-radius: 50%;
+}
+.clock label:nth-child(2){
+    margin-left: 45px;
+}
+.stopwatch label{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;        
+    color: rgb(7, 211, 247);
+    margin-right: 40px;
+    font-weight: 700;
+}
+.clock button{
+    position: absolute; 
+    margin-top: 200px;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #e29a15;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: all ease .6s;
+}
+.clock button:hover{
+    background-color: aqua;
+    color: rgb(0, 0, 0);    
+    cursor: pointer;
+}
+
+.clock button:active{
+    font-size: 12px;
+}
+
+.clock .btn-iniciar{      
+    margin-right: 200px;
+}
+.clock .btn-parar{      
+    margin-left: 20px;
+}
+.clock .btn-stop{      
+    margin-left: 230px;
+}
+.stopwatch h2{
+    position: absolute;
+    margin-top: -200px;
+    font-size: 50px;
+    text-shadow: 4px 4px 5px rgb(104, 29, 104);
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    
+    background-color: rgb(14, 39, 43);
+    color: lemonchiffon;
+    padding-top: 20px;
+}
+footer p{
+    margin: 0px;
+}
+
+.generetion{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./image/banner-informatica.jpg);
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.geral-menu{
+    width: 1140px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.geral-menu .logo img{
+    width: 150px;
+    margin-left: 10px;
+}
+.geral-menu .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 360px;
+    padding-bottom: 50px;
+}
+.generetion .menu label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.generetion h2{
+    width: 100%;
+    background: #04c8e2;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    opacity: .7;
+}
+
+
+
+.head-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a22ea7;
+}
+.head-menu a{
+    margin-right: 40px;
+}
+.head-menu ul{
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 20px 0px; 
+}
+.head-menu ul li{
+    background: rgb(19, 140, 145);
+    color: rgb(255, 255, 255);
+    list-style: none;
+    margin: 0px 10px;
+    padding: 5px 50px;
+    border-radius: 7px;
+}
+.head-menu ul li:hover{
+    background: rgb(57, 211, 216);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.head-menu .homee{
+    width: 70px;
+    height: 70px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;  
+    background-color: #0baeee;
+}
+
+/*Anuncio_1*/
+.banner-anuncio-1{ 
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #0f535c;
+    font-weight: 800;
+}
+.banner-anuncio-1 img{
+    width: inherit;
+    height: inherit;
+    margin: 0px;
+    box-shadow: 0px 0px 17px #000000;
+}
+.banner-anuncio-1 a{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+/*Anuncio_2*/
+.banner-anuncio-2{ 
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #0f535c;
+    font-weight: 800;
+    margin-top: 100px;
+}
+.banner-anuncio-2 img{
+    width: inherit;
+    height: inherit;
+    margin: 0px;
+    box-shadow: 0px 0px 17px #000000;
+}
+.banner-anuncio-2 a{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+

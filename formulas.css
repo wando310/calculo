@@ -1,0 +1,356 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./image/fundo1.png);
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif; 
+    box-sizing: border-box;    
+      
+}
+li{
+    transition: all .3s;
+}
+button{
+    transition: all .3s;
+}
+.default-buttom{
+    background-color: rgb(221, 158, 98);
+    border: none;
+    padding: 7px 30px;
+    border-radius: 20px;
+    color: #ffff;
+    font-weight: 700;   
+    margin-top: 10px;
+    margin-left: 80px;    
+    box-shadow: 2px 2px 2px #000000;
+    outline: none;
+}
+.generetion{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./image/banner-informatica.jpg);
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.geral-menu{
+    width: 1140px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.geral-menu .logo img{
+    width: 150px;
+    margin-left: 10px;
+}
+.geral-menu .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 360px;
+    padding-bottom: 50px;
+}
+.generetion .menu label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.generetion h2{
+    width: 100%;
+    background: #04c8e2;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    opacity: .7;
+}
+
+.head-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a22ea7;
+}
+.head-menu a{
+    margin-right: 40px;
+}
+.head-menu ul{
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 20px 0px; 
+}
+.head-menu ul li{
+    background: rgb(19, 140, 145);
+    color: rgb(255, 255, 255);
+    list-style: none;
+    margin: 0px 10px;
+    padding: 5px 50px;
+    border-radius: 7px;
+}
+.head-menu ul li:hover{
+    background: rgb(57, 211, 216);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.geral{
+    width: 1140px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+.lado-direito{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;  
+    margin-left: 16px; 
+}
+.lado-direito .barra{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+.lado-direito .barra hr{
+    width: 400px;
+    height: 5px;
+    background: rgb(210, 126, 30);
+    border: none;    
+}
+
+.lado-direito .informatiom-content{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+.lado-direito .informatiom-content div:first-child{
+    width: 500px;
+    height: 300px;
+    margin-right: 30px;
+    flex-direction: column;    
+}
+
+.lado-direito .informatiom-content .image img{
+    width: 500px;
+    height: 400px;
+}
+.lado-direito .informatiom-content img{
+    width: inherit;
+    height: inherit;
+}
+.lado-direito .informatiom-content .info{
+    width: 160px;
+    height: 80px;
+    background: rgb(32, 159, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.lado-direito .informatiom-content .info img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -40px;
+}
+.lado-direito .informatiom-content .info h2{
+    font-size: 20px;
+    color: rgb(185, 219, 35);
+    text-shadow: 5px 5px 5px rgb(180, 15, 158);
+}
+.lado-direito .informatiom-content a{
+    text-decoration: none;
+}
+/*==========================================================================
+========================================================================================
+============================================================================*/
+
+@media only screen and (max-width: 360px) {
+    body{
+        width: auto;
+    }
+    .geral{
+        width: auto;
+        display: flex;
+        flex-direction: column;        
+    }   
+
+    .generetion .menu label{
+        margin: 10px;        
+    }
+    .geral-menu .logo{
+        margin-left: 130px;
+    }
+
+    .head-menu {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-menu ul a{
+        margin: auto;
+        margin-top: 14px;
+    }
+    .head-menu ul a li{
+        margin: auto;
+        padding: 5px 20px;
+        font-size: 13px;
+    }
+   
+    footer {
+        height: 50px;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 1470px;
+        background-color: rgb(14, 39, 43);
+        color: lemonchiffon;
+        padding-top: 20px;
+    }
+
+    .shadow{
+        height: 500px;
+        margin-top: 400px;
+        padding-right: 12px;
+    }
+   .shadow .informatiom-content{
+       flex-direction: column;
+   }
+   
+   .shadow .informatiom-content img{
+       width: 360px;
+       height: 200px;
+       margin-top: -277px;
+   }   
+   .shadow .informatiom-content div{
+       display: flex;
+       justify-content: center;
+       width: 360px;
+       height: 300px;
+       margin-left: -17px;
+       margin-top: 0px;
+   }
+   .shadow .informatiom-content div p{
+       width: 340px;
+       margin-left: 15px;
+   }
+   .shadow .informatiom-content .style{
+       width: 340px;
+       padding: 40px 5px;
+       margin-top: -100px;
+       margin-left: -12px;
+   }
+   .shadow .informatiom-content .style p{
+       width: 270px;
+       margin: 0px;
+   }
+   .shadow .informatiom-content .style img{
+       margin: -30px 0px;
+    }
+    .shadow .paragrafo{
+        width: 320px;
+    }
+
+ 
+
+.generetion .geral-menu{
+    width: 360px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.generetion .geral-menu .logo img{
+    width: 150px;
+    margin-left: 10px;
+}
+.generetion .geral-menu .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -260px;
+    margin-top: 170px;
+}
+.generetion h2{
+    width: 100%;
+    background: #04c8e2;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    opacity: .7;
+}
+
+.lado-direito .informatiom-content div:first-child {
+    width: 360px;
+    height: 300px;
+    margin-right: 30px;
+    flex-direction: column;
+}
+
+.shadow .informatiom-content img {
+    width: 360px;
+    height: 200px;
+    margin-top: -423px;
+    margin-left: 1px;
+}
+
+footer{
+    margin-top: 1900px;
+}
+
+.shadow .informatiom-content .style{
+    height: auto;
+    margin-top: -150px;
+    margin-left: -6px;
+}
+.shadow .barra hr{
+    width: 20px;
+}
+
+body .head-menuu{
+    font-size: 26px;
+}
+}
+
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    
+    background-color: rgb(14, 39, 43);
+    color: lemonchiffon;
+    padding-top: 20px;
+}
+footer p{
+    margin: 0px;
+}
+footer img{
+    width: 20px;
+    margin-right: 7px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+

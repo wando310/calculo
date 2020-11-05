@@ -1,0 +1,277 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./image/fundo1.png);
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif; 
+    box-sizing: border-box;     
+      
+}
+.geral{
+    width: 1140px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+.lado-direito{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;  
+    margin-left: 16px; 
+}
+.lado-direito .barra{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+.lado-direito .barra hr{
+    width: 450px;
+    height: 5px;
+    background: rgb(30, 198, 210);
+    border: none;    
+}
+.lado-direito .information-content{
+    display: flex;
+    margin: 10px;
+    margin-top: 30px;
+}
+.lado-direito .information-content div:first-child{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.lado-direito .information-content img{
+    width: inherit;
+    box-shadow: 0px 0px 30px #000000;
+}
+.lado-direito .information-content .style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -15px;
+}
+.lado-direito .information-content .style img{
+    width: 400px;
+    height: 400px;
+}
+.lado-direito .information-content .style img:last-child{
+    width: 380px;
+    height: 200px;    
+    box-shadow: none;
+    margin-top: 30px;
+}
+/*==========================================================================
+========================================================================================
+============================================================================*/
+
+@media only screen and (max-width: 360px) {
+    body{
+        width: auto;
+    }
+    .geral{
+        width: auto;
+        display: flex;
+        flex-direction: column;        
+    }  
+    .geral-menu .logo{
+        margin-left: 130px;
+    }
+
+    .head-menu {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-menu ul a{
+        margin: auto;
+        margin-top: 14px;
+    }
+    .head-menu ul a li{
+        margin: auto;
+        padding: 5px 20px;
+        font-size: 13px;
+    }
+
+    footer {
+        height: 50px;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 1470px;
+        background-color: rgb(14, 39, 43);
+        color: lemonchiffon;
+        padding-top: 20px;
+    }
+
+    .shadow{
+        height: 500px;
+        margin-top: 400px;
+        padding-right: 12px;
+    }
+    .shadow .paragrafo{
+        width: 320px;
+    }
+.generetion .geral-menu{
+    width: 360px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.generetion .geral-menu .logo img{
+    width: 150px;
+    margin-left: 10px;
+}
+.generetion .geral-menu .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -260px;
+    margin-top: 170px;
+}
+.generetion h2{
+    width: 100%;
+    background: #04c8e2;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    opacity: .7;
+}
+
+.shadow p{
+    width: 330px;    
+}
+footer{
+    margin-top: 1900px;
+}
+.shadow .barra hr{
+    width: 107px;
+}
+.lado-direito .shadow .information-content{
+    width: 360px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -16px;
+    margin-top: -270px;
+}
+.lado-direito .shadow .information-content img{
+    width: 350px;
+    height: 370px;
+    margin-left: 32px;
+}
+.lado-direito .shadow .information-content p{
+    width: 330px;
+    margin-left: 32px;
+}
+.lado-direito .shadow .information-content .style{
+    width: 360px;
+    display: flex;
+}
+.lado-direito .shadow .information-content .style img{
+   width: 350px;
+   margin-left: 0px;
+}
+.lado-direito .information-content div:first-child {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+
+}
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    
+    background-color: rgb(14, 39, 43);
+    color: lemonchiffon;
+    padding-top: 20px;
+}
+footer p{
+    margin: 0px;
+}
+.generetion{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./image/banner-informatica.jpg);
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.geral-menu{
+    width: 1140px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.geral-menu .logo img{
+    width: 150px;
+    margin-left: 10px;
+}
+.geral-menu .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 360px;
+    padding-bottom: 50px;
+}
+.generetion h2{
+    width: 100%;
+    background: #04c8e2;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    opacity: .7;
+}
+.head-menu a{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.head-menu a img{
+    width: 40px;
+}
+
+.head-menu{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e85a7;
+    color: rgb(0, 247, 255);
+    font-size: 35px;
+    padding: 20px;
+    font-weight: 600;
+    border-bottom: solid 7px;
+}

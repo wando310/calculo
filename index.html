@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="index.css">
+    <title>Calculos</title>
+</head>
+
+<body>  
+    <div class="generetion"> 
+
+        <div class="sub-menu" onclick="submenu()">
+            <img src="image/sub_menu3.png" alt="img">
+        </div>  
+
+        <div class="geral-menu">  
+            <div class="logo">
+               <a href="index.html"><img src="./image/logo.png" alt="img"></a>    
+            </div>  
+           
+            <section class="menu">               
+                <label for="">
+                    <img src="./image/calculator.png" alt="img">
+                    <div id="calculator" onclick="aparecer('calculator')" class="calculadora">Calculadora</div>
+                </label>
+
+                <label for="">
+                    <img src="./image/cronometer.png" alt="img">
+                    <div onclick="aparecer('stopwatch')" class="cronometro">Cronômetro</div>
+                </label>
+
+                <label for="">
+                    <img src="./image/thermometer.png" alt="img">
+                    <div onclick="aparecer('temperatura')" class="temperatura">Temperatura</div>    
+                </label>            
+            </section>                   
+
+        </div>
+
+        <h2>Calculos e conversões</h2>
+
+    </div>
+
+    <div class="head-menu">
+        <ul>
+            <a href="formulas.html"><li>Tabelas e Formulas</li></a>
+            <a href="conversor.html"><li>Conversor de Medidas</li></a>
+        </ul>
+    </div>
+
+    <section class="geral">       
+
+        <div class="lado-esquerdo">   
+
+            <ul>      
+                <li class="volume">Volume
+                    <img src="./image/arow.png" alt="img">
+                    <ul>
+                        <li id="triv" onclick="aparecer('triv')" class="tri">Cone (m<sup>3</sup>)</li>
+                        <li id="quadv" onclick="aparecer('quadv')" class="quad">Quadrado (m<sup>3</sup>)</li>
+                        <li id="retv" onclick="aparecer('retv')" class="reta">Retângulo (m<sup>3</sup>)</li>
+                        <li id="esfv" onclick="aparecer('esfv')" class="esf">Esfera (m<sup>3</sup>)</li>
+                        <li id="trapv" onclick="aparecer('trapv')" style="display: none;" class="trap">Trapézio (m<sup>3</sup>)</li>
+                    </ul>
+                </li>   
+
+                <li class="Perimetro">Perímetro
+                    <img src="./image/arow.png" alt="img">
+                    <ul>
+                        <li id="trip" onclick="aparecer('trip')" > Triângulo (m)</li>
+                        <li id="quadp" onclick="aparecer('quadp')" > Quadrado (m)</li>
+                        <li id="retp" onclick="aparecer('retp')" > Retângulo (m)</li>
+                        <li id="esfp" onclick="aparecer('esfp')" > Esfera (m)</li>
+                        <li id="trapp" onclick="aparecer('trapp')" > Trapézio (m)</li>
+                    </ul>
+                </li>                     
+                
+                <li class="area">Area
+                    <img src="./image/arow.png" alt="img">
+                    <ul>
+                        <li onclick="aparecer('tripa')" id="tria">Triângulo (m<sup>2</sup>)</li>
+                        <li onclick="aparecer('quada')" id="quada">Quadrado (m<sup>2</sup>)</li>
+                        <li onclick="aparecer('reta')" id="reta">Retângulo (m<sup>2</sup>)</li>
+                        <li onclick="aparecer('esfa')" id="esfa">Esfera (m<sup>2</sup>)</li>
+                        <li onclick="aparecer('trapa')" id="trapa">Trapézio (m<sup>2</sup>)</li>
+                    </ul>
+                </li>   
+            </ul>     
+            <p class="mensagem">O volume do triangulo é: 23cm</p>  
+           <!--Area de anuncios--> 
+           <!--anuncio_1--> 
+            <div class="banner-anuncio-1">
+                <a href="https://go.hotmart.com/E42805284K" target="blank"><img src="image/anuncio.png" alt="img">
+                Descubra o método mais eficaz para perder gordura e emagrecer de maneira rápida e permanente!</a>                
+                
+            </div>
+            <!--anuncio_2--> 
+            <div class="banner-anuncio-2">
+                <a href="https://go.hotmart.com/M42809163L" target="blank"><img src="image/anuncio_2.png" alt="img">
+                    APRENDA A REALÇAR SUA BELEZA<br>Descubra técnicas desde as mais básicas até a mais poderosa!</a>                
+                
+            </div>
+        </div>
+
+        
+        <div class="lado-direito"> 
+            <div class="shadow">
+                <section class="informatiom-content">
+                    <div>                  
+                        <img src="./image/Albert-einstein.jpg" alt="img">
+                        <p><strong> Albert Einstein</strong> foi um dos maiores físicos da história e suas contribuições 
+                            mudaram o paradigma da ciência do século XX. Albert Einstein (1879-1955) foi 
+                            um físico alemão, nascido na cidade de Ulm em 1879. Quando jovem, mudou-se para a 
+                            Suíça, onde se formou, tornando-se professor da Escola Politécnica de Zurique.</p>
+                    </div>
+
+                    <div class="style">
+                        <h2>História da matemática</h2>
+                        <p>A <strong> Matemática</strong>, como a conhecemos hoje, surgiu no Antigo Egito e no Império Babilônico, por volta de 3500 a.C.
+                            Porém, na pré-história, os seres humanos já usavam os conceitos de contar e medir.                        
+                            Por isso, a matemática não teve nenhum inventor, mas foi criada a partir da necessidade 
+                            das pessoas em medir e contar objetos.</p>
+
+                            <a href="historyMath.html" class="info">                           
+                                <img src="image/mais.png" alt="img">
+                                <h2>Saiba Mais</h2>                            
+                            </a>
+                    </div>
+                </section>
+
+                <div class="bbarra">
+                    <hr>
+                    <h2>O Conceito da Matemática</h2>
+                    <hr>
+                </div>
+
+                    <p class="paragrafo">A matemática á nada mais que um campo do conhecimento que tem como principais conceitos os 
+                        números, a aritmética, a álgebra, a geometria, trigonometria, estatística e cálculo.
+                        Inegavelmente, o objetivo principal do conhecimento matemático é sistematizar quantidades,
+                        medidas, estruturas e variações.
+                    </p>
+                    <p class="paragrafo">
+                        Além disso, a matemática tem um caráter de resolução de problemas.
+                        Desde questões cotidianas até de caráter técnico-científico.
+                    </p>
+                    <p class="paragrafo">
+                        A palavra matemática, vem do latim. Mas, conta ainda com uma origem mais remota do 
+                        vocábulo grego, pode ser traduzida como ”conhecimento”. O principal objeto de estudo
+                        da matemática é a análise de estruturas e magnitudes/grandezas a partir de um raciocínio
+                        lógico. Assim, permite a criação de padrões para serem usados em desenvolvimento 
+                        de hipóteses e conjecturas.
+                    </p>
+                    <p class="paragrafo">
+                        Certamente, ao longo do tempo, o conhecimento matemático foi desenvolvido e aperfeiçoado, 
+                        seguindo uma constante evolução. Assim, investigou novas situações e estabeleceu uma relação
+                        direta com o ser humano e seu cotidiano.
+                    </p>
+            </div>
+
+
+            <div id="calc" class="calc">
+                    <input id="visor-calc" class="visor-calc" type="text" value=""><br>
+                
+                    <input onclick="limpador()" class="limpador" type="button" value="Limpar">
+               
+                <div class="buttons-calc">
+                    <input onclick="pegarValor(value)" id="btn-7" type="button" value="7">
+                    <input onclick="pegarValor(value)" id="btn-8" type="button" value="8">
+                    <input onclick="pegarValor(value)" id="btn-9" type="button" value="9">
+                    <input onclick="limpador(value)" id="btn-/" type="button" value="/">
+
+                    <input onclick="pegarValor(value)" id="btn-4" type="button" value="4">
+                    <input onclick="pegarValor(value)" id="btn-5" type="button" value="5">
+                    <input onclick="pegarValor(value)" id="btn-6" type="button" value="6">
+                    <input onclick="limpador(value)" id="btn--" type="button" value="-">
+
+                    <input onclick="pegarValor(value)" id="btn-1" type="button" value="1">
+                    <input onclick="pegarValor(value)" id="btn-2" type="button" value="2">
+                    <input onclick="pegarValor(value)" id="btn-3" type="button" value="3">
+                    <input onclick="limpador(value)" id="btn-+" type="button" value="+">
+                    <input onclick="pegarValor(value)" id="btn-0" type="button" value="0">
+                    <input onclick="pegarValor(value)" id="btn-," type="button" value=".">
+                    <input onclick="calcularValor()" id="btn-=" type="button" value="=">
+                    <input onclick="limpador(value)" id="btn-x" type="button" value="*">                   
+                </div>  
+                <h2>História da calculadora</h2> 
+                <p>A <strong>Primeira calculadora</strong> mecânica foi inventada pelo professor alemão Wilhelm Schickard em 1623.
+                    Essa calculadora era capaz de somar, subtrair, dividir e multiplicar números ate 6 dígitos, 
+                    indicando o resultado através de um toque de sino, por isso ficou conhecida como relógio calculador.<br>
+                    Infelizmente o único exemplar dessa calculadora (ainda incompleto) foi destruído em um incêndio, Mas
+                    na década de 60, foram encontradas as anotações do projeto dessa calculadora, possibilitando sua reprodução,
+                    atribuindo a Wilhelm Schickard a invenção da calculadora.                    
+                    Atribuição que antes era dada ao matemático francês Blaise Pascal, pela criação da Pascaline.</p>  
+                    <h2> Pascaline</h2>
+                    <p>       
+                        A Pascaline foi uma calculadora mecânica construída pelo matemático Frances Blaise Pascal em 1642.<br><br>
+
+                        A Pascaline em seu interior tinha como elemento essencial uma roda dentada construída com 10 "dentes".
+                         Cada "dente" corresponde a um algarismo, de 0 a 9. A primeira roda da direita corresponde às unidades,
+                          a segunda a sua esquerda corresponde às dezenas, a seguinte às centenas e assim sucessivamente.<br><br>
+
+                        Um mecanismo muito simples construído com uma "garra" resolvia o problema de transporte, cada vez em
+                         que o algarismo de uma das rodas passava de nove a zero, fazendo com que as rodas vizinhas fossem arrastadas, 
+                         deslocando-se um dente, para frente ou para trás, dependo da operação matemática.<br><br>
+
+                        Através desse mecanismo, a Pascaline realizava operações de adição e subtração, mas a ideia 
+                        original era que fizesse também multiplicação e divisão.                        
+                    </p>           
+            </div>
+
+            <div id="conversao" class="conversao">
+                <h2>Selecione a Conversão</h2>
+                <p>Arraste para baixo para ver resultado caso não aparecer</p>
+                <img src="image/formula.png" alt="img">
+                <input onclick="selecao(value), all_calc()" value="0" class="seletor" id="kelvin-cel" type="checkbox">
+                <input onclick="selecao(value), all_calc()" value="1" class="seletor" id="kelvin-fahre" type="checkbox">
+                <input onclick="selecao(value), all_calc()" value="2" class="seletor" id="fahre-cel" type="checkbox">
+                <input onclick="selecao(value), all_calc()" value="3" class="seletor" id="fahre-kelvin" type="checkbox">
+                <input onclick="selecao(value), all_calc()" value="4" class="seletor" id="cel-kelvin" type="checkbox">
+                <input onclick="selecao(value), all_calc()" value="5" class="seletor" id="cel-fahre" type="checkbox">
+
+                <input class="width" id="k1" type="text" placeholder="K">
+                <input class="width" id="k2" type="text" placeholder="K">
+                <input class="width" id="f1" type="text" placeholder="F">
+                <input class="width" id="f2" type="text" placeholder="F">
+                <input class="width" id="c1" type="text" placeholder="C">
+                <input class="width" id="c2" type="text" placeholder="C">
+
+                <button id="btn-resultado" onclick="all_calc(), aparecer_resultado()" class="btn-mostra-resultado">Mostrar Resultado</button>               
+                <div id="all-resultado" class="all-result">Resultado</div>                
+            </div>
+
+            <div id="stopwatch" class="stopwatch">
+                <div class="clock">
+                    <h2>Cronômetro</h2>
+                    <label for="">Hours                        
+                        <div class="hou">00</div>
+                    </label>
+
+                    <label for="">Minutes
+                        <div class="min">00</div>
+                    </label>
+
+                    <label for="">Secounds
+                        <div class="sec">00</div>
+                    </label>
+
+                    <label for="">Millisec
+                        <div class="mill">00</div>
+                    </label>
+                    <button onclick="comecar()" class="btn-iniciar">Iniciar</button>
+                    <button onclick="pausar()" class="btn-parar">Pausar</button>
+                    <button onclick="stop()" class="btn-stop">Stop</button>
+                </div>  
+                <h3>História do Cronômetro</h3>    
+
+                <p>O primeiro desses aparelhos foi desenvolvido no século XVIII para auxiliar a navegação, 
+                    ajudando a determinar quais as rotas marítimas eram mais seguras e precisas. Alguns 
+                    aperfeiçoamentos foram sendo feitos a partir do momento que foi determinado realmente como um 
+                    instrumento marítimo. Os modelos, com o passar do tempo, passaram a ser mais compactos e mais
+                     exatos, mais parecidos ao que conhecemos atualmente como cronômetros de competição.</p>          
+           
+                <p>O instrumento antes usado para a determinação das rotas marítimas era o quadrante, que proporcionou
+                     a localização dos navios por meio da posição relativas das estrelas, e foi usado até o final do século XVIII. 
+                     Nesse caso, era necessário que fossem realizadas observações no intervalo de doze horas, ou ainda que
+                      fossem usadas tablas que indicassem a localização do barco em determinado horário do dia.</p>
+
+                <p>No mar, os relógios de pêndulo não funcionavam muito bem, pois as temperaturas que mudavam subitamente,
+                     além do balanço das ondas, afetavam os movimentos dos pêndulos, fazendo com que as horas não fossem
+                      precisas e, portanto, que as rotas acabassem sendo prejudicadas, levando a graves acidentes.</p>
+            
+                <p>A alternativa foi desenvolver um novo relógio que funcionasse bem a bordo do navio. Com isso, 
+                    John Harrison, um fabricante de relógios de Yorkshire que era conhecido pela exatidão de seus aparelhos e 
+                    pelas melhorias que introduziu nos mecanismos de pêndulos tradicionais, desenvolveu o primeiro modelo marítimo 
+                    no ano de 1735.</p>
+            </div>
+
+            <div id="triangulo" class="conteiner-vol-triangulo">                           
+                <div class="image">
+                    <img src="image/triangulo.png" alt="img">
+                    <img src="image/formula_triangulo.png" alt="img">  
+                </div>  
+                  
+                <div class="area-calculo">               
+                    <h2>Volume Cone</h2> 
+                    <div class="formula">
+                         <img src="image/volume_cone.png" alt="img">
+                        <input id="triR" class="R default-input" value="" type="text" placeholder="r">
+                        <input id="triA" class="a default-input" value="" type="text" placeholder="a">
+                    </div>
+                    <button onclick="calctriangulo()" id="btn-calc-tri" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                    
+                </div>                                              
+            </div>
+
+            <div id="quadrado" class="conteiner-vol-quadrado">                           
+                <div class="image">
+                    <img src="image/cubo.png" alt="img">
+                    <img src="image/formula-do-cubo.png" alt="img">                
+                </div>  
+
+                <div class="area-calculo">               
+                    <h2>Volume Quadrado</h2> 
+                    <div class="formula">
+                         <img src="image/volume_quadrado.png" alt="img">
+                        <input id="quadA" class="a default-input" type="text" placeholder="a">
+                    </div>
+                    <button onclick="calcquadrado()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="retangulo" class="conteiner-vol-retangulo">                           
+                <div class="image">
+                    <img src="image/retangulo.png" alt="img">
+                    <img src="image/formula do retangulo.png" alt="img">                
+                </div>  
+               
+                <div class="area-calculo">               
+                    <h2>Volume Retângulo</h2> 
+                    <div class="formula">
+                         <img src="image/volume_retangulo.png" alt="img">
+                        <input id="retA" class="a default-input" type="text" placeholder="a">
+                        <input id="retB" class="b default-input" type="text" placeholder="b">
+                        <input id="retC" class="c default-input" type="text" placeholder="c">
+                    </div>
+                    <button onclick="calcretangulo()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+            
+            <div id="esfera" class="conteiner-vol-esfera">                
+                <div class="image">
+                    <img src="image/esfera.png" alt="img">
+                    <img src="image/formula_esfera.png" alt="img">                
+                </div> 
+
+                <div class="form">
+                    <h2>Volume Esfera</h2>
+                    <img src="image/volume_esfera.png" alt="img">
+                    <input id="esfR" class="default-input" type="text" placeholder="r">
+                    <button onclick="calcesfera()" class="default-buttom">Calcular</button>             
+                </div>                                    
+            </div>
+    
+            <div id="trapezio" class="conteiner-vol-trapezio">                           
+                <div class="image">
+                    <img src="image/volume_trapezio .png" alt="img">                               
+                </div>   
+
+                <div class="area-calculo">               
+                    <h2>Volume Trapézio</h2> 
+                    <div class="formula">
+                         <img src="image/volume_formula_trapezio.png" alt="img">
+                        <input id="trapb1" class="b--1 default-input" type="text" placeholder="b1">
+                        <input id="trapb2" class="b--2 default-input" type="text" placeholder="b2">
+                        <input id="traph" class="h-alt default-input" type="text" placeholder="h">
+                        <input id="trapH" class="H-Alt default-input" type="text" placeholder="H">
+                    </div>
+                    <button onclick="calctrapezio()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+            
+            <div id="peri-triangulo" class="conteiner-peri-triangulo">                           
+                <div class="image">
+                    <img src="image/triangulo-1.png" alt="img">                                   
+                </div>    
+
+                <div class="area-calculo">               
+                    <h2>Perímetro do Triângulo</h2> 
+                    <div class="formula">
+                         <img src="image/perimetro_triangulo.png" alt="img">
+                        <input id="peri1" class=" peri1 default-input" type="text" placeholder="L1">
+                        <input id="peri2" class=" peri2 default-input" type="text" placeholder="L2">
+                        <input id="peri3" class=" peri3 default-input" type="text" placeholder="L3">
+                    </div>
+                    <button onclick="calctriangulo_p()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="peri-quadrado" class="conteiner-peri-quadrado">                           
+                <div class="image">
+                    <img src="image/quadrado.png" alt="img">    
+                    <img src="image/form_quadrado.png" alt="img">                                   
+                </div>  
+
+                <div class="area-calculo">               
+                    <h2>Perímetro do Quadrado</h2> 
+                    <div class="formula">
+                         <img src="image/formula_p_q.png" alt="img">
+                        <input id="quad1" class=" quad1 default-input" type="text" placeholder="L">                        
+                    </div>
+                    <button onclick="calcquadrado_p()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="peri-retangulo" class="conteiner-peri-retangulo">                           
+                <div class="image">
+                    <img src="image/perimetro.jpg" alt="img">  
+                    <img src="image/formula-doperimetro.png" alt="img">                                   
+                </div>  
+
+                <div class="area-calculo">               
+                    <h2>Perímetro do Retângulo</h2> 
+                    <div class="formula">
+                        <img src="image/perimetro_retangulo.png" alt="img">
+                        <input id="ret1" class=" ret1 default-input" type="text" placeholder="b">
+                        <input id="ret2" class=" ret2 default-input" type="text" placeholder="h">
+                    </div>
+                    <button onclick="calcretangulo_p()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="peri-esfera" class="conteiner-peri-esfera">                           
+                <div class="image">
+                    <img src="image/esfera.png" alt="img">                                                        
+                </div>  
+
+                <div class="area-calculo">               
+                    <h2>Perímetro da Esfera</h2> 
+                    <div class="formula">
+                        <img src="image/perimetro_esfera.png" alt="img">
+                        <input id="esf1" class=" esf1 default-input" type="text" placeholder="r">
+                    </div>
+                    <button onclick="calcesfera_p()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="peri-trapezio" class="conteiner-peri-trapezio">                           
+                <div class="image">
+                    <img src="image/trapezio.png" alt="img">   
+                    <img src="image/formula_trapezioo.png" alt="img">                                                        
+                </div>  
+                
+                <div class="area-calculo">               
+                    <h2>Perímetro do Trapézio</h2> 
+                    <div class="formula">
+                        <img src="image/perimetro_trapezio.png" alt="img">
+                        <input id="trap1" class=" trap1 default-input" type="text" placeholder="B">
+                        <input id="trap2" class=" trap2 default-input" type="text" placeholder="b">
+                        <input id="trap3" class=" trap3 default-input" type="text" placeholder="L1">
+                        <input id="trap4" class=" trap4 default-input" type="text" placeholder="L2">
+                    </div>
+                    <button onclick="calctrapezio_p()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="conteiner-area-triangulo" class="conteiner-area-triangulo">                           
+                <div class="image">
+                    <img src="image/areaa-do-triangulo-2.png" alt="img">                                                        
+                </div>    
+                
+                <div class="area-calculo">               
+                    <h2>Area do Triângulo</h2> 
+                    <div class="formula">
+                        <img src="image/formula_area_triangulo.png" alt="img">
+                        <input id="area1" class=" area1 default-input" type="text" placeholder="h">
+                        <input id="area2" class=" area2 default-input" type="text" placeholder="b">
+                    </div>
+                    <button onclick="calctriangulo_a()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="conteiner-area-quadrado" class="conteiner-area-quadrado">                           
+                <div class="image">
+                    <img src="image/areaa-do-quadrado.jpg" alt="img">                                                        
+                </div>  
+                
+                <div class="area-calculo">               
+                    <h2>Area do Quadrado</h2> 
+                    <div class="formula">
+                        <img src="image/area_quadrado.png" alt="img">                        
+                        <input id="area_quad1" class=" area_quad1 default-input" type="text" placeholder="L">
+                    </div>
+                    <button onclick="calcquadrado_a()" class="calcular-vol-trapezio default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="conteiner-area-retangulo" class="conteiner-area-retangulo">                           
+                <div class="image">
+                    <img src="image/área-do-retângulo-300x200.jpg" alt="img">                                                        
+                </div>  
+                
+                <div class="area-calculo">               
+                    <h2>Area do Retângulo</h2> 
+                    <div class="formula">
+                        <img src="image/formula_retangulo.png" alt="img">                        
+                        <input id="area_ret_1" class=" area_ret_1 default-input" type="text" placeholder="a">
+                        <input id="area_ret_2" class=" area_ret_2 default-input" type="text" placeholder="b">
+                    </div>
+                    <button onclick="calcretangulo_a()" class="default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="conteiner-area-esfera" class="conteiner-area-esfera">                           
+                <div class="image">
+                    <img src="image/esfera.png" alt="img">    
+                    <img src="image/formula_area_esferica.png" alt="img">                                                        
+                </div>  
+                
+                <div class="area-calculo">               
+                    <h2>Area da Esfera</h2> 
+                    <div class="formula">
+                        <img src="image/formula_esferaa.png" alt="img">            
+                        <input id="area_esf_1" class=" area_esf_1 default-input" type="text" placeholder="r">
+                    </div>
+                    <button onclick="calcesfera_a()" class="default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+            <div id="conteiner-area-trapezio" class="conteiner-area-trapezio">                           
+                <div class="image">
+                    <img src="image/area-trapezio.jpg" alt="img">                                                                             
+                </div>  
+                
+                <div class="area-calculo">               
+                    <h2>Area do Trapézio</h2> 
+                    <div class="formula">
+                        <img src="image/formulaa_trapezio.png" alt="img">            
+                        <input id="area_trap_B" class=" area_trap_B default-input" type="text" placeholder="B">
+                        <input id="area_trap_b" class=" area_trap_b default-input" type="text" placeholder="b">
+                        <input id="area_trap_h" class=" area_trap_h default-input" type="text" placeholder="h">
+                    </div>
+                    <button onclick="calctrapezio_a()" class="default-buttom">Calcular</button>
+                </div>                                               
+            </div>
+
+
+        </div>               
+    </section>
+
+    <footer>
+        <p>Email: lucivandooliveira56@gmail.com</p>
+        <p>Contato: (11) 992666860</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
